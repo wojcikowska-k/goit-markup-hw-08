@@ -1,0 +1,22 @@
+:root {
+  --white-color: #fff;
+  --almost-white-color: #f5f4fa;
+  --black-color: #000;
+  --almost-black-color: #212121;
+  --dark-color: #2f303a;
+  --blue-color: #2196f3;
+  --grey-color: #757575;
+  --grey-transparent-color: rgba(100%, 100%, 100%, 60%);
+  --shadow-color: #eeeeee;
+  --dark-transparent-color: rgba(47, 48, 58, 0.4);
+  --dark-transparent-color2: rgba(47, 48, 58, 0.8);
+  --light-transparent-color: rgba(255, 255, 255, 0.1);
+  --blue-transparent-color: rgba(33, 150, 243, 0.9);
+  --grey-border-color: rgba(33, 33, 33, 0.2);
+  --grey-half-color: rgba(117, 117, 117, 0.5);
+  --grey-icon-color: #afb1b8;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}

@@ -1,0 +1,12 @@
+@mixin media-icons($color, $bgcolor) {
+  border-radius: 50%;
+  fill: $color;
+  background-color: $bgcolor;
+}
+@mixin button($color, $bgcolor) {
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  color: $color;
+  background-color: $bgcolor;
+}
