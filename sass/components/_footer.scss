@@ -4,18 +4,42 @@
   }
   &__columns {
     display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
     padding-top: 60px;
     padding-bottom: 60px;
   }
   &__contacts {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     flex-direction: column;
-    align-items: flex-start;
     text-decoration: none;
-    line-height: 1.71;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-bottom: 60px;
   }
 }
-
+// .footer {
+//   & {
+//     background-color: var(--dark-color);
+//   }
+//   &__columns {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-content: flex-start;
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//   }
+//   &__contacts {
+//     display: flex;
+//     margin: 0;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     text-decoration: none;
+//     line-height: 1.71;
+//   }
+// }

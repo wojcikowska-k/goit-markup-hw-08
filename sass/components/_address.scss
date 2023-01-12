@@ -28,3 +28,33 @@
     letter-spacing: 0.03em;
   }
 }
+// .address {
+//   &__list {
+//     display: flex;
+//     justify-content: flex-start;
+//     flex-direction: column;
+//     margin: 0 auto;
+//     padding: 0;
+//     gap: 3px;
+//     font-style: normal;
+//     margin-top: 20px;
+//     list-style: none;
+//   }
+//   &__map {
+//     color: var(--white-color);
+//     text-decoration: none;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 24px;
+//     letter-spacing: 0.03em;
+//   }
+//   &__mail,
+//   &__tel {
+//     color: var(--grey-transparent-color);
+//     text-decoration: none;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 24px;
+//     letter-spacing: 0.03em;
+//   }
+// }

@@ -8,8 +8,21 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
-
+// .header {
+//   & {
+//     background-color: var(--white-color);
+//     border-bottom: 1px solid var(--shadow-color);
+//   }
+//   &__flex {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin: 0 auto;
+//     padding-top: 25px;
+//     padding-bottom: 25px;
+//   }
+// }

@@ -2,21 +2,22 @@
   background-color: var(--almost-white-color);
   text-align: center;
   &__content {
-    padding: 94px 0px;
+    padding: 60px 0px;
   }
   &__title {
     font-weight: 700;
     color: var(--almost-black-color);
-    font-size: 36px;
-    letter-spacing: calc(0.03 * 36px);
+    font-size: 28px;
+    letter-spacing: 0.03em;
     margin: 0;
+    margin-bottom: 30px;
   }
   &__list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 30px;
     margin: 0;
-    margin-top: 50px;
     padding: 0;
     list-style: none;
   }
@@ -38,8 +39,11 @@
   }
   &__icons-list {
     display: flex;
+    justify-content: center;
     gap: 10px;
-    padding: 16px 32px 30px 32px;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 24px;
     fill: var(--grey-icon-color);
     list-style: none;
     margin: 0;
@@ -53,3 +57,58 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+// .team {
+//   background-color: var(--almost-white-color);
+//   text-align: center;
+//   &__content {
+//     padding: 94px 0px;
+//   }
+//   &__title {
+//     font-weight: 700;
+//     color: var(--almost-black-color);
+//     font-size: 36px;
+//     letter-spacing: calc(0.03 * 36px);
+//     margin: 0;
+//   }
+//   &__list {
+//     display: flex;
+//     justify-content: space-between;
+//     gap: 30px;
+//     margin: 0;
+//     margin-top: 50px;
+//     padding: 0;
+//     list-style: none;
+//   }
+//   &__card {
+//     background-color: var(--white-color);
+//     border-radius: 0px 0px 4px 4px;
+//     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 1px 3px rgba(0, 0, 0, 0.12);
+//   }
+//   &__name {
+//     font-weight: 500;
+//     color: var(--almost-black-color);
+//     text-align: center;
+//   }
+//   &__job {
+//     color: var(--grey-color);
+//     text-align: center;
+//     margin: 0;
+//   }
+//   &__icons-list {
+//     display: flex;
+//     gap: 10px;
+//     padding: 16px 32px 30px 32px;
+//     fill: var(--grey-icon-color);
+//     list-style: none;
+//     margin: 0;
+//   }
+//   &__icon-social-media:hover > &__icon,
+//   &__icon-social-media:focus > &__icon {
+//     @include media-icons(var(--white-color), var(--blue-color));
+//   }
+//   &__icon-social-media > &__icon {
+//     border-radius: 50%;
+//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
