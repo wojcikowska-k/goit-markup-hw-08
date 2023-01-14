@@ -1,5 +1,42 @@
-.navigation {
+.navigation.nav-desktop {
   display: none;
+}
+.navigation {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  padding-bottom: 302px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-left: 40px;
+    margin-top: 48px;
+    padding: 0;
+    gap: 36px;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: var(--almost-black-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+  &__link:visited {
+    color: var(--almost-black-color);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--blue-color);
+  }
+  &__list &__link--open {
+    color: var(--blue-color);
+  }
 }
 // .navigation {
 //   font-size: 14px;

@@ -4,9 +4,10 @@
 .hero {
   text-align: center;
   padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
-  max-width: 480px;
-  height: 400px;
+  max-width: 100%;
+  max-height: auto;
   background-image: linear-gradient(
       to bottom,
       var(--dark-transparent-color),
@@ -75,22 +76,14 @@
   &__icon {
     background-color: var(--almost-white-color);
     border-radius: 4%;
-    display: block;
-    width: 450px;
-  }
-  &__antenna {
-    padding: 25px 190px;
-  }
-  &__clock {
-    padding: 25px 190px;
-  }
-  &__diagram {
-    padding: 33px 190px;
-  }
-  &__astronaut {
-    padding: 25px 190px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+
 // .hero-background {
 //   background-color: var(--dark-color);
 // }
