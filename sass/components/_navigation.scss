@@ -38,57 +38,53 @@
     color: var(--blue-color);
   }
 }
-// .navigation {
-//   font-size: 14px;
-//   font-weight: 500;
-//   line-height: 1.14;
-//   display: flex;
-//   margin: 0 auto;
-//   margin-left: 93px;
-//   letter-spacing: calc(0.02 * 14px);
+@media screen and (min-width: 768px) {
+  .navigation.nav-desktop {
+    display: contents;
+  }
+  .navigation {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0;
+    letter-spacing: 0.02em;
 
-//   &__list {
-//     list-style: none;
-//     display: flex;
-//     justify-content: flex-start;
-//     margin: 0 auto;
-//     padding: 0;
-//     gap: 46px;
-//   }
-//   &__link {
-//     text-decoration: none;
-//     font-family: "Roboto", sans-serif;
-//     font-weight: 500;
-//     color: var(--almost-black-color);
-//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     position: relative;
-//   }
-//   &__link:visited {
-//     color: var(--almost-black-color);
-//   }
-//   &__link:hover,
-//   &__link:focus {
-//     color: var(--blue-color);
-//   }
-//   &__link::after {
-//     content: "";
-//     height: 4px;
-//     background-color: var(--blue-color);
-//     border-radius: 2px;
-//     position: absolute;
-//     top: calc(28px + 16px + 2px);
-//     left: 0px;
-//     display: none;
-//     width: 100%;
-//   }
-//   &__link:hover::after,
-//   &__link:focus::after {
-//     display: block;
-//   }
-//   &__list &__link--open {
-//     color: var(--blue-color);
-//   }
-//   &__list &__link--open::after {
-//     display: block;
-//   }
-// }
+    &__list {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 60px;
+      margin: 0;
+      margin-left: 83px;
+    }
+    &__link::after {
+      content: "";
+      height: 4px;
+      background-color: var(--blue-color);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(28px + 16px + 1px);
+      left: 0px;
+      display: none;
+      width: 100%;
+    }
+    &__link:hover::after,
+    &__link:focus::after {
+      display: block;
+    }
+    &__list &__link--open {
+      color: var(--blue-color);
+    }
+    &__list &__link--open::after {
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    &__list {
+      gap: 46px;
+      margin-left: 93px;
+    }
+  }
+}

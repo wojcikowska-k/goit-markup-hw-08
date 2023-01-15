@@ -6,6 +6,7 @@
     letter-spacing: 0.03em;
     margin: 0;
     padding-top: 60px;
+    padding-bottom: 30px;
     text-align: center;
   }
   & {
@@ -13,7 +14,6 @@
     flex-wrap: wrap;
     fill: var(--grey-icon-color);
     padding: 0;
-    padding-top: 30px;
     padding-bottom: 60px;
     gap: 30px;
     justify-content: space-between;
@@ -39,40 +39,24 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-// .clients {
-//   &-title {
-//     font-weight: 700;
-//     color: var(--almost-black-color);
-//     font-size: 36px;
-//     letter-spacing: calc(0.03 * 36px);
-//     margin: 0;
-//     padding-top: 94px;
-//     text-align: center;
-//   }
-//   & {
-//     display: flex;
-//     fill: var(--grey-icon-color);
-//     padding-top: 50px;
-//     padding-bottom: 94px;
-//     gap: 27px;
-//     justify-content: space-between;
-//     list-style: none;
-//     margin: 0;
-//   }
-//   &__svg-item {
-//     border-color: var(--grey-icon-color);
-//     border-width: 1px;
-//     border-style: solid;
-//     border-radius: 4%;
-//     display: block;
-//     padding: 17px 32px 14px 32px;
-//   }
-//   &__icon:hover > &__svg-item,
-//   &__icon:focus > &__svg-item {
-//     fill: var(--blue-color);
-//     border-color: var(--blue-color);
-//   }
-//   &__icon > &__svg-item {
-//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .clients {
+    &__svg-item {
+      width: 226px;
+      padding: 16px 60px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-bottom: 94px;
+    &__svg-item {
+      width: 170px;
+      padding: 16px 32px;
+    }
+    &-title {
+      padding-top: 94px;
+      padding-bottom: 50px;
+    }
+  }
+}

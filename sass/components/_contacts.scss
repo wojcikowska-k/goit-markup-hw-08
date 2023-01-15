@@ -2,12 +2,11 @@
   display: none;
 }
 .contacts {
-  & {
-    font-size: 34px;
-    line-height: 40px;
-    margin-left: 40px;
-    padding-bottom: 64px;
-  }
+  font-size: 34px;
+  line-height: 40px;
+  margin-left: 40px;
+  padding-bottom: 64px;
+  letter-spacing: 0.02em;
   &__list {
     list-style: none;
     margin: 0;
@@ -16,7 +15,6 @@
     flex-direction: column;
     gap: 32px;
   }
-
   &__list-item {
     color: var(--blue-color);
   }
@@ -24,7 +22,6 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    letter-spacing: 0.02em;
     color: var(--grey-color);
   }
   &__link {
@@ -32,37 +29,68 @@
     text-decoration: none;
   }
 }
-// .contacts {
-//   & {
-//     font-size: 14px;
-//     line-height: 1.14;
-//     display: flex;
-//     margin: 0;
-//   }
-//   &__list {
-//     list-style: none;
-//     margin: 0;
-//     padding: 0;
-//     display: flex;
-//     justify-content: flex-start;
-//     gap: 30px;
-//   }
-//   &__list-item {
-//     color: var(--grey-color);
-//   }
-//   &__link {
-//     color: currentColor;
-//     text-decoration: none;
-//     display: flex;
-//     align-items: center;
-//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-//   &__link:hover,
-//   &__link:focus {
-//     color: var(--blue-color);
-//   }
-//   &__icon {
-//     fill: currentColor;
-//     margin-right: 10px;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .contacts.cont-desktop {
+    display: contents;
+  }
+  .contacts {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0;
+    &__list {
+      gap: 10px;
+      margin-left: 101px;
+    }
+    &__list-item {
+      color: var(--grey-color);
+    }
+    &__list-item:nth-child(2) {
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+    &__link {
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover,
+    &__link:focus {
+      color: var(--blue-color);
+    }
+    &__icon {
+      fill: currentColor;
+      margin-right: 8px;
+    }
+    &__icon-envelope {
+      width: 14px;
+      height: 10px;
+    }
+    &__icon-smartphone {
+      width: 10px;
+      height: 14px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 60px;
+    &__list {
+      flex-direction: row;
+      gap: 30px;
+      margin-left: 345px;
+    }
+    &__icon {
+      margin-right: 10px;
+    }
+    &__icon-envelope {
+      width: 16px;
+      height: 12px;
+    }
+    &__icon-smartphone {
+      width: 12px;
+      height: 16px;
+    }
+  }
+}
