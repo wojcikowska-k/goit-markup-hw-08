@@ -14,22 +14,23 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 .modal {
-  max-width: 450px;
+  position: absolute;
   width: calc(100vw - 30px);
-  position: relative;
-  margin: 93px 15px;
+  max-width: 450px;
+  top: 50%;
+  left: 50%;
   padding: 40px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: scale(1);
+  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   visibility: 1;
   pointer-events: initial;
   transition: transform 500ms ease;
   .is-hidden & {
-    transform: scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
   }
   &__close-button {
     border-radius: 50%;
@@ -193,13 +194,17 @@
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    position: absolute;
+    max-width: 528px;
+
     &__form-input {
-      width: 448px;
+      max-width: 448px;
       font-size: 12px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
     &__form-comment {
-      width: 448px;
+      max-width: 448px;
     }
     &__policy-label {
       font-size: 14px;

@@ -14,7 +14,9 @@
       var(--dark-transparent-color)
     ),
     url("../images/header-mobile.jpg");
-
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   &__title {
     font-weight: 900;
     font-size: 26px;
